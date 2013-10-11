@@ -5,7 +5,7 @@ Our RESTful API lets you interact with Debitoor using JSON over HTTPS.
 The following resources will help you get up to speed.
 
 ##Getting started
-Follow this simple guide and you'll hopefully be up and running in no time. (If not, please [contact us](mailto:team@debitoor.com) - we'd be happy to help):
+Follow these three steps and you'll hopefully be up and running in no time. (If not, please [contact us](mailto:techteam@debitoor.com) - we'd be happy to help):
 
 1. [Register your application](#registration) to give your app access to the API.
 
@@ -14,18 +14,18 @@ Follow this simple guide and you'll hopefully be up and running in no time. (If 
 3. [Start interacting](#debitoor-api-endpoints) and build cool stuff!
 
 ## Registration
-In order to interact with the API you first need to register an application. You can do this from the [Settings page](https://app.debitoor.com/account/settings) inside the app. This will give you a `client_id` and a `client_secret` which are used to authenticate your application when interacting with the Debitoor API.
+In order to interact with the API you first need to register an application. You can do this from the [Settings page](https://app.debitoor.com/account/settings) inside the app. This will give you a `client_id` and a `client_secret` which are used in the to authenticate your application during the OAuth 2.0 flow.
 
 You can register as many applications as you like.
 
 ## Authentication
-All requests to the API need to be authenticated. This is done by including an OAuth 2.0 `access_token` as a query string, cookie or custom header. You can read more about how to obtain and use access tokens in our [OAuth 2.0 Guide](https://github.com/e-conomic/debitoor-api/blob/master/pages/authentication.md).
+The Debitoor API supports the OAuth 2.0 protocol for authentication and authorization. You can read more about setting up OAuth in our [Authentication Guide](https://github.com/e-conomic/debitoor-api/blob/master/pages/authentication.md).
 
 ##Debitoor API Endpoints
 
 The API is accessed via `https://api.debitoor.com` and speaks JSON over HTTPS.
 
-All the API endpoints are documented in detail here:
+All endpoints are documented in detail here:
 
 > [https://api.debitoor.com/api](https://api.debitoor.com/api)
 
@@ -77,5 +77,5 @@ Additionally the body of the response always contains an error object describing
 If you want to test your API calls we recommend using curl.
 Additionally the API is CORS enabled, so you can also use your browser as a sandbox for experimenting.
 
-To further help you get started we've written a small sample application that demonstrates how to wire up the OAuth 2.0 flow. 
+To further help you get started we've written a small sample application that demonstrates how to wire up the OAuth 2.0 flow.
 The source for the app can be found on [github](https://github.com/e-conomic/debitoor-oauth-sample) and you can give it a spin [here](https://s3-eu-west-1.amazonaws.com/debitoor-oauth-sample/index.html).
