@@ -74,6 +74,8 @@ Additionally the body of the response always contains an error object describing
 
 ##Testing the API
 
-If you want to test your API calls we recommend using curl. Additionally the API is CORS enabled, so you can also use your browser as a sandbox for experimenting.
+If you want to test your API calls we recommend using curl.
+Additionally the API is CORS enabled, so you can also use your browser as a sandbox for experimenting.
 
-To further help you get started we've written a small sample application that demonstrates how to wire up the OAuth 2.0 flow. The source for the app can be found on [github]() and you can give it a spin [here]().
+To further help you get started we've written a small sample application that demonstrates how to wire up the OAuth 2.0 flow. 
+The source for the app can be found on [github](https://github.com/e-conomic/debitoor-oauth-sample) and you can give it a spin [here](https://s3-eu-west-1.amazonaws.com/debitoor-oauth-sample/index.html).
