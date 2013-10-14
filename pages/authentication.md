@@ -9,9 +9,10 @@ Developers need to [register their application](https://github.com/e-conomic/deb
 This describes how you can retrieve an API `access_token` from your web app using OAuth 2.0. An access token allows your app to make requests to Debitoor on behalf of a user.
 
 ## 1. Redirect user to the Debitoor authorize page:
+From your web app you should add a link to the following page:
 
 ```plain
-GET https://api.debitoor.com/login/oauth2/authorize?client_id=YOUR_CLIENT_ID&response_type=code
+GET https://app.debitoor.com/login/oauth2/authorize?client_id=YOUR_CLIENT_ID&response_type=code
 ```
 
 **Request Parameters:**
@@ -23,7 +24,7 @@ GET https://api.debitoor.com/login/oauth2/authorize?client_id=YOUR_CLIENT_ID&res
 
 **Schema:**
 
-[/schemas/login/oauth2/authorize](https://api.debitoor.com/api/v1.0/schemas/login/oauth2/authorize)
+[/schemas/login/oauth2/authorize](https://app.debitoor.com/api/v1.0/schemas/login/oauth2/authorize)
 
 **Response:**
 
