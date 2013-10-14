@@ -27,7 +27,7 @@ The Debitoor API supports the OAuth 2.0 protocol for authentication and authoriz
 
 The API is accessed via `https://api.debitoor.com` and speaks JSON over HTTPS.
 
-All endpoints are documented in detail:
+All endpoints are detailed in the API Documentation:
 
 > [https://api.debitoor.com/api](https://api.debitoor.com/api)
 
@@ -57,7 +57,7 @@ We're trying to keep our URLs as RESTful as possible. This means that every reso
 - `PATCH` Partially updates a resource; only include the properties to be updated.
 - `DELETE` Deletes a resource.
 
-The [endpoint documentation](https://api.debitoor.com/api) lists which methods are supported by the different endpoints.
+The [API Documentation](https://api.debitoor.com/api) lists which methods are supported by the different endpoints.
 
 
 ##Error Handling
