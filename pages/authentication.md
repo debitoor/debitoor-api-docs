@@ -38,7 +38,7 @@ If the user accepts your request, Debitoor redirects back to your site with a te
 https://YOUR_REGISTERED_CALLBACK/?code=CODE
 ```
 
-## 3. Exchange your temporary code with an access token
+## 3. Receive an access token in exchange for your code
 
 After receiving the `code` your website passes back the `code` to Debitoor. In return you will obtain an `access_token`. To perform this exchange, make a POST to:
 
@@ -66,8 +66,9 @@ The response will include a JSON string containing the `access_token`:
 
 You should save this token and use it to make API requests on behalf of the user. The token will not expire, but can be revoked by the user from within the Debitoor application.
 
-# Use the token to access the API
-Our API is JSON based. You can view all of the available endpoints at our [API documentation page](https://api.debitoor.com/api).
+# Using the Access Token
+
+Our API is JSON-based. You can view all available endpoints in our [API Documentation](https://api.debitoor.com/api).
 
 The token should be included in each API request. This can be done either in the query string:
 
@@ -82,6 +83,7 @@ curl -H "x-token: ACCESS_TOKEN" https://api.debitoor.com/api/v1.0/sales/customer
 ```
 
 # OAuth Sample App
+
 We've put together a small sample that demonstrates how to set up the OAuth 2.0 authentication.
 
-The source for the app can be found on [github](https://github.com/e-conomic/debitoor-oauth-sample) and you can give it a spin [here](https://s3-eu-west-1.amazonaws.com/debitoor-oauth-sample/index.html).
+The source for the app can be found on [github](https://github.com/e-conomic/debitoor-oauth-sample). Feel free to [give it a spin](https://s3-eu-west-1.amazonaws.com/debitoor-oauth-sample/index.html).
