@@ -6,21 +6,21 @@ As a developer you need to [register your app](https://github.com/e-conomic/debi
 
 # Web App Flow
 
-Follow the directions below to retrieve an API `access_token` from your web app using OAuth 2.0. An access token allows your app to make requests to Debitoor on behalf of a user.
+Follow the steps below to retrieve an API `access_token` for your web app using OAuth 2.0. An access token allows your app to make requests to Debitoor on behalf of a user.
 
-## 1. Redirect user to the Debitoor authorize page:
-From your web app you should add a link to the following page:
+## 1. Redirect the user to the Debitoor authorization page
+From your web app, add a link to the following page:
 
 ```plain
 GET https://app.debitoor.com/login/oauth2/authorize?client_id=YOUR_CLIENT_ID&response_type=code
 ```
 
-**Request Parameters:**
+**Request parameters:**
 
-- **client_id** (required) - The client ID you received from Debitoor when you registered your app.
-- **response_type** (required) - The type of response. For web flow use the value `code`.
-- **redirect_uri** (optional) - URL encoded URL in your app where users will be sent after successful authorization. If not supplied the user will be sent to the callback URL you specified when registering your app. Note that the host and port of the redirect_uri must be exactly the same as the app's callback URL.
-- **lang** (optional) - Language Code. Determines the language of the authorize page. Defaults to en-US.
+- **client_id** (required): The client ID you received from Debitoor when you registered your app.
+- **response_type** (required): The type of response. For the web flow, use the value `code`.
+- **redirect_uri** (optional): URL-encoded URL in your app that users will be directed to following authorization. If not specified, the user will be sent to the callback URL you specified when registering your app. Note that the host and port of the redirect_uri must be exactly the same as the app's callback URL.
+- **lang** (optional): Language code that determines the language of the authorization page. By default set to en-US.
 
 **Schema:**
 
@@ -28,9 +28,9 @@ GET https://app.debitoor.com/login/oauth2/authorize?client_id=YOUR_CLIENT_ID&res
 
 **Response:**
 
-The user will see the authorization prompt, asking him to allow your app to access his data.
+The user will see the authorization prompt, asking if your app should be allowed access to the user's data.
 
-## 2. Debitoor redirects user back to your site
+## 2. Debitoor redirects the user back to your site
 
 If the user accepts your request, Debitoor redirects back to your site with a temporary authorization `code` in the query string:
 
@@ -38,19 +38,19 @@ If the user accepts your request, Debitoor redirects back to your site with a te
 https://YOUR_REGISTERED_CALLBACK/?code=CODE
 ```
 
-## 3. Exchange code to access token
+## 3. Exchange your temporary code with an access token
 
-After receiving the `code` your web site passes back the `code` to Debitoor. In return it will obtain an `access_token`. This exchange is done by making a POST to:
+After receiving the `code` your website passes back the `code` to Debitoor. In return you will obtain an `access_token`. To perform this exchange, make a POST to:
 
 ```plain
 POST https://app.debitoor.com/login/oauth2/access_token
 ```
 
-**Request Parameters:**
+**Request parameters:**
 
-- **client_secret** (required) - The client secret you received from Debitoor when you registered your app.
-- **code** (required) - The code you received as a response to the first authorize step.
-- **redirect_uri** (required) - URL in your app where users will be sent after successful authorization.
+- **client_secret** (required): The client secret you received from Debitoor when you registered your app.
+- **code** (required): The code you received as a response in the previous step.
+- **redirect_uri** (required): The URL in your app that users will be directed to following authorization.
 
 **Schema:**
 
@@ -58,13 +58,13 @@ POST https://app.debitoor.com/login/oauth2/access_token
 
 **Response:**
 
-The response will contain a JSON string containing the `access_token`:
+The response will include a JSON string containing the `access_token`:
 
 ```js
 { access_token: 'ACCESS_TOKEN' }
 ```
 
-You should save this token and use it to make API requests on behalf of the user. The token will not expire, but can be revoked by the user from within Debitoor.
+You should save this token and use it to make API requests on behalf of the user. The token will not expire, but can be revoked by the user from within the Debitoor application.
 
 # Use the token to access the API
 Our API is JSON based. You can view all of the available endpoints at our [API documentation page](https://api.debitoor.com/api).
