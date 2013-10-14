@@ -1,12 +1,12 @@
-# OAuth2 Authentication
+# OAuth 2.0 Authentication
 
-The Debitoor API supports the [OAuth 2.0](http://oauth.net/2/) protocol for authorizing third party web sites to connect without the need for those sites to know the user's username and password.
+The Debitoor API supports the [OAuth 2.0](http://oauth.net/2/) protocol for authorizing third-party websites to connect without the need for those sites to know the user's username and password.
 
-Developers need to [register their application](https://github.com/e-conomic/debitoor-api#registration) with Debitoor before they can use the OAuth flow.
+As a developer you need to [register your app](https://github.com/e-conomic/debitoor-api#registration) with Debitoor before you can use the OAuth flow.
 
-# Web Application Flow
+# Web App Flow
 
-This describes how you can retrieve an API `access_token` from your web app using OAuth 2.0. An access token allows your app to make requests to Debitoor on behalf of a user.
+Follow the directions below to retrieve an API `access_token` from your web app using OAuth 2.0. An access token allows your app to make requests to Debitoor on behalf of a user.
 
 ## 1. Redirect user to the Debitoor authorize page:
 From your web app you should add a link to the following page:
