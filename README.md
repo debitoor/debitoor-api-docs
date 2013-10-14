@@ -14,7 +14,7 @@ Follow these three steps and you'll hopefully be up and running in no time. (If 
 3. [Start interacting](#debitoor-api-endpoints) and build cool stuff!
 
 ## Registration
-In order to interact with the API you first need to register an application. You can do this from the [Settings page](https://app.debitoor.com/account/settings) inside the app. This will give you a `client_id` and a `client_secret` which are used in the to authenticate your application during the OAuth 2.0 flow.
+In order to interact with the API you first need to register an application. You can do this from the [Settings page](https://app.debitoor.com/account/settings) inside the app. This will give you a `client_id` and a `client_secret` which are used to authenticate your application during the OAuth 2.0 flow.
 
 You can register as many applications as you like.
 
