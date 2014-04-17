@@ -50,7 +50,7 @@ POST https://app.debitoor.com/login/oauth2/access_token
 
 - **client_secret** (required): The client secret you received from Debitoor when you registered your app.
 - **code** (required): The code you received as a response in the previous step.
-- **redirect_uri** (required): The URL in your app that users will be directed to following authorization.
+- **redirect_uri** (required): The URL in your app that users will be directed to following authorization. Note that the host and port of the redirect_uri must be exactly the same as the app's callback URL.
 
 **Schema:**
 
@@ -73,13 +73,13 @@ Our API is JSON-based. You can view all available endpoints in our [API Document
 The token should be included in each API request. This can be done either in the query string:
 
 ```plain
-curl https://api.debitoor.com/api/v1.0/sales/customers?token=ACCESS_TOKEN
+curl https://api.debitoor.com/api/v1.0/countries?token=ACCESS_TOKEN
 ```
 
 Or as an `x-token` HTTP header:
 
 ```plain
-curl -H "x-token: ACCESS_TOKEN" https://api.debitoor.com/api/v1.0/sales/customers
+curl -H "x-token: ACCESS_TOKEN" https://api.debitoor.com/api/v1.0/countries
 ```
 
 # OAuth Sample App
