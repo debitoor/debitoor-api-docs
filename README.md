@@ -34,7 +34,7 @@ All endpoints are detailed in the API Documentation:
 If you've already obtained an `access_token` you can use the following call to retrieve a list of customers:
 
 ```sh
-curl -i https://api.debitoor.com/api/v1.0/customers?access_token=YOUR_ACCESS_TOKEN
+curl -i https://api.debitoor.com/api/customers/v1?access_token=YOUR_ACCESS_TOKEN
 ```
 
 ##General Pointers
