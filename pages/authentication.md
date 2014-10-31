@@ -24,7 +24,7 @@ GET https://app.debitoor.com/login/oauth2/authorize?client_id=YOUR_CLIENT_ID&res
 
 **Schema:**
 
-[/schemas/login/oauth2/authorize](https://app.debitoor.com/api/v1.0/schemas/login/oauth2/authorize)
+[/schemas/login/oauth2/authorize](https://app.debitoor.com/api/schemas/login/oauth2/authorize/v1)
 
 **Response:**
 
@@ -54,7 +54,7 @@ POST https://app.debitoor.com/login/oauth2/access_token
 
 **Schema:**
 
-[/schemas/login/oauth2/access_token](https://app.debitoor.com/api/v1.0/schemas/login/oauth2/access_token)
+[/schemas/login/oauth2/access_token](https://app.debitoor.com/api/schemas/login/oauth2/access_token/v1)
 
 **Response:**
 
@@ -73,13 +73,13 @@ Our API is JSON-based. You can view all available endpoints in our [API Document
 The token should be included in each API request. This can be done either in the query string:
 
 ```plain
-curl https://api.debitoor.com/api/v1.0/countries?token=ACCESS_TOKEN
+curl https://api.debitoor.com/api/countries/v1?token=ACCESS_TOKEN
 ```
 
 Or as an `x-token` HTTP header:
 
 ```plain
-curl -H "x-token: ACCESS_TOKEN" https://api.debitoor.com/api/v1.0/countries
+curl -H "x-token: ACCESS_TOKEN" https://api.debitoor.com/api/countries/v1
 ```
 
 # OAuth Sample App
