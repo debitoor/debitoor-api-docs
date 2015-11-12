@@ -84,4 +84,4 @@ curl -H "x-token: ACCESS_TOKEN" https://api.debitoor.com/api/countries/v1
 
 # OAuth Sample App
 
-We've put together a small sample app that demonstrates how to set up the OAuth 2.0 authentication. You can find the [source for the app](https://github.com/e-conomic/debitoor-oauth-sample) on github. Feel free to [give it a spin](https://s3-eu-west-1.amazonaws.com/debitoor-oauth-sample/index.html)!
+We've put together a small sample app that demonstrates how to set up the OAuth 2.0 authentication. You can find the [source for the app](https://github.com/debitoor/debitoor-oauth-sample) on github. Feel free to [give it a spin](https://s3-eu-west-1.amazonaws.com/debitoor-oauth-sample/index.html)!
