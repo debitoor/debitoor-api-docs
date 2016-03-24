@@ -21,7 +21,7 @@ To interact with the API, you first need to register your app. You can do this f
 You can register as many apps as you like.
 
 ## Authentication
-The Debitoor API supports the OAuth 2.0 protocol for authentication and authorization. You can read more about setting up OAuth in our [Authentication Guide](https://github.com/e-conomic/debitoor-api/blob/master/pages/authentication.md).
+The Debitoor API supports the OAuth 2.0 protocol for authentication and authorization. You can read more about setting up OAuth in our [Authentication Guide](https://github.com/debitoor/debitoor-api/blob/master/pages/authentication.md).
 
 ##Debitoor API Endpoints
 
@@ -79,8 +79,8 @@ Additionally, the body of the response always contains an error object describin
 If you want to test your API calls we recommend using curl.
 Additionally the API is CORS-enabled, so you can also use your browser as a sandbox for experimenting.
 
-To further help you get started we've written a small sample app that demonstrates how to set up the OAuth 2.0 flow. You can find the [source for the app](https://github.com/e-conomic/debitoor-oauth-sample) on github. Feel free to [give it a spin](https://s3-eu-west-1.amazonaws.com/debitoor-oauth-sample/index.html)!
+To further help you get started we've written a small sample app that demonstrates how to set up the OAuth 2.0 flow. You can find the [source for the app](https://github.com/debitoor/debitoor-oauth-sample) on github. Feel free to [give it a spin](https://s3-eu-west-1.amazonaws.com/debitoor-oauth-sample/index.html)!
 
 ## Node.js Helper
 We've built a thin wrapper using node.js that will make it even easier to work with the API.
-If you're re into that sort of thing, go [read more about it here](https://github.com/e-conomic/node-debitoor).
+If you're re into that sort of thing, go [read more about it here](https://github.com/debitoor/node-debitoor).
