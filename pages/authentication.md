@@ -2,7 +2,7 @@
 
 The Debitoor API supports the [OAuth 2.0](http://oauth.net/2/) protocol for authorizing third-party websites to connect without the need for those sites to know the user's username and password.
 
-As a developer you need to [register your app](https://github.com/e-conomic/debitoor-api#registration) with Debitoor before you can use the OAuth flow.
+As a developer you need to [register your app](https://github.com/debitoor/debitoor-api-docs#registration) with Debitoor before you can use the OAuth flow.
 
 # Web App Flow
 
