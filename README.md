@@ -21,7 +21,7 @@ To interact with the API, you first need to register your app. You can do this f
 You can register as many apps as you like.
 
 ## Authentication
-The Debitoor API supports the OAuth 2.0 protocol for authentication and authorization. You can read more about setting up OAuth in our [Authentication Guide](https://github.com/debitoor/debitoor-api/blob/master/pages/authentication.md).
+The Debitoor API supports the OAuth 2.0 protocol for authentication and authorization. You can read more about setting up OAuth in our [Authentication Guide](https://github.com/debitoor/debitoor-api-docs/blob/master/pages/authentication.md).
 
 ##Debitoor API Endpoints
 
